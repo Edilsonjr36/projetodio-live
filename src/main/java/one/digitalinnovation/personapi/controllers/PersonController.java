@@ -39,9 +39,14 @@ public class PersonController {
         return personService.findById(id);
     }
 
-    @GetMapping
+    /*@GetMapping
     public List<PersonDTO> listAll() {
         return personService.listAll();
+    }*/
+
+    @GetMapping
+    public String listAll() {
+        return "Hello Darkness my Old Friend";
     }
 
     @PutMapping("/{id}")
